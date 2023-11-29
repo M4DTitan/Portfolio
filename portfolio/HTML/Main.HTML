@@ -4,262 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Held3rio Wafunga</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Raleway', sans-serif;
-            background-color: #090E16;
-            color: #ffffff;
-        }
-
-        header {
-            position: relative;
-            width: 100%;
-            height: 64px;
-            background: rgba(123, 74, 226, 0.05);
-            border-radius: 16px;
-        }
-
-        nav {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding-right: 20px;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-align: center;
-            color: rgba(123, 74, 226, 0.50);
-            font-size: 18px;
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-            text-align: left;
-            padding-top: 100px;
-        }
-
-        main h1 {
-            font-size: 52px;
-            font-weight: 800;
-            margin-bottom: 20px;
-        }
-
-        main p {
-            font-size: 20px;
-            font-weight: 400;
-            margin-bottom: 30px;
-        }
-
-        main .emoji-box {
-            width: 160px;
-            height: 45px;
-            position: relative;
-            margin-bottom: 30px;
-        }
-
-        main .emoji-box::before {
-            content: '';
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background: rgba(123, 74, 226, 0.10);
-            border-radius: 16px;
-        }
-
-        main .emoji {
-            font-size: 20px;
-            font-weight: 700;
-            color: #7B4AE2;
-            line-height: 36px;
-        }
-
-        main .developer-info {
-            font-size: 20px;
-            font-weight: 400;
-            margin-bottom: 50px;
-        }
-
-        main .social-icons {
-            display: flex;
-            margin-bottom: 50px;
-        }
-
-        main .social-icon {
-            width: 32px;
-            height: 32px;
-            margin-right: 16px;
-            position: relative;
-        }
-
-        main .social-icon::before {
-            content: '';
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background: rgba(255, 255, 255, 0.50);
-            border-radius: 50%;
-        }
-
-        main .social-icon .inner-icon {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background: #090E16;
-            border-radius: 50%;
-        }
-
-        main .contact-box {
-            width: 196px;
-            height: 44px;
-            position: relative;
-            margin-bottom: 50px;
-        }
-
-        main .contact-box::before {
-            content: '';
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            border-radius: 16px;
-            border: 1px rgba(123, 74, 226, 0.50) solid;
-        }
-
-        main .contact-text {
-            font-size: 16px;
-            font-weight: 600;
-            color: rgba(123, 74, 226, 0.50);
-            margin-top: 14px;
-        }
-
-        main .download-cv {
-            font-size: 16px;
-            font-weight: 600;
-            color: rgba(123, 74, 226, 0.50);
-            margin-top: 14px;
-            cursor: pointer;
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: rgba(123, 74, 226, 0.10);
-        }
-
-        footer .footer-content {
-            width: 1931px;
-            height: 88px;
-            position: relative;
-        }
-
-        footer .copyright {
-            width: 457px;
-            height: 29px;
-            position: absolute;
-            left: 146px;
-            top: 32px;
-            color: rgba(22, 8, 8, 0.5);
-            font-size: 16px;
-            font-weight: 400;
-            word-wrap: break-word;
-        }
-
-        footer .social-icons {
-            width: 38px;
-            height: 38px;
-            position: absolute;
-            left: 887px;
-            top: 23px;
-        }
-
-        footer .social-icons .inner-icon {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background: rgba(10, 10, 10, 0.5);
-            border-radius: 50%;
-        }
-
-        footer .social-icons .icon {
-            width: 17.82px;
-            height: 16.61px;
-            position: absolute;
-            left: 10.69px;
-            top: 9.50px;
-            background: #090E16;
-            border-radius: 50%;
-        }
-
-        footer .download-icon {
-            width: 39.56px;
-            height: 38.59px;
-            position: absolute;
-            left: 945.29px;
-            top: 23.40px;
-            background: rgba(255, 255, 255, 0.50);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file for better organization -->
 </head>
 <body>
-
     <header>
-        <div style="width: 100%; height: 100%; position: relative">
-            <div style="width: 1640px; height: 64px; left: 0px; top: 0px; position: absolute; background: rgba(123, 74, 226, 0.05); border-radius: 16px"></div>
+        <div class="header-container">
+            <div class="background-overlay"></div>
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Sobre mim</a>
-                <a href="#">Portfólio</a>
-                <a href="#">Skills</a>
-                <a href="#">Carreira</a>
-                <a href="#">Recomendações</a>
-                <a href="#">Contato</a>
+                <div class="nav-item">Home</div>
+                <div class="nav-item">Sobre mim</div>
+                <div class="nav-item">Portfólio</div>
+                <div class="nav-item">Skills</div>
+                <div class="nav-item">Carreira</div>
+                <div class="nav-item">Recomendações</div>
+                <div class="nav-item">Contato</div>
             </nav>
         </div>
     </header>
 
     <main>
-        <div style="width: 50%; max-width: 411px; height: 120px; position: relative; color: white; font-size: 52px; font-weight: 800; word-wrap: break-word; text-align: left;">
-            Heldério<br/>Wafunga
-        </div>
-        <div class="emoji-box">
-            <div class="emoji">👋 Olá Mundo!</div>
-        </div>
-        <p class="developer-info">Software developer · Mobile Developer</p>
-        <div class="social-icons">
-            <div class="social-icon">
-                <div class="inner-icon"></div>
-                <div class="inner-icon"></div>
+        <div class="main-container">
+            <div class="hero-section">
+                <h1>Heldério<br/>Wafunga</h1>
+                <div class="greeting">
+                    <div class="greeting-background"></div>
+                    <div class="greeting-text">👋 Olá Mundo!</div>
+                </div>
+                <p class="developer-info">Software developer · Mobile Developer</p>
+                <div class="social-icons">
+                    <!-- Your SVG icons can be added here -->
+                    <!-- Example: <img src="your-svg-icon.svg" alt="Icon"> -->
+                </div>
             </div>
-            <div class="social-icon">
-                <div class="inner-icon"></div>
-                <div class="inner-icon"></div>
+
+            <div class="contact-box">
+                <div class="contact-background"></div>
+                <div class="contact-text">
+                    <p>Vamos conversar</p>
+                    <button class="download-cv-btn">Baixar CV</button>
+                </div>
             </div>
-        </div>
-        <div class="contact-box">
-            <div class="contact-text">Vamos conversar</div>
-            <div class="download-cv">Baixar CV</div>
         </div>
     </main>
 
     <footer>
-        <div class="footer-content" style="background: rgba(123, 74, 226, 0.10)">
+        <div class="footer-container">
             <div class="copyright">Copyright © Heldério Wafunga · 2023</div>
             <div class="social-icons">
-                <div class="inner-icon"></div>
-                <div class="icon"></div>
+                <!-- Your SVG icons for the footer can be added here -->
             </div>
-            <div class="download-icon"></div>
         </div>
     </footer>
-    
 </body>
 </html>

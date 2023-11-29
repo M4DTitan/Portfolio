@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #090E16;
+    color: #7B4AE2; /* Purple color */
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 64px;
+    background: rgba(123, 74, 226, 0.05);
+    border-radius: 16px;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-align: center;
+    color: rgba(123, 74, 226, 0.50);
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+main h1 {
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+main .emoji-box {
+    width: 160px;
+    height: 45px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+main .emoji-box::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(123, 74, 226, 0.10);
+    border-radius: 16px;
+}
+
+main .emoji {
+    font-size: 20px;
+    font-weight: 700;
+    color: #7B4AE2;
+    line-height: 36px;
+}
+
+main .developer-info {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+main .social-icons {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+main .social-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    position: relative;
+}
+
+main .social-icon::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 50%;
+}
+
+main .social-icon .inner-icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #090E16;
+    border-radius: 50%;
+}
+
+main .contact-box {
+    width: 196px;
+    height: 44px;
+    position: relative;
+    margin-bottom: 50px;
+    text-align: right; /* Align text to the right */
+}
+
+main .contact-box::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 16px;
+    border: 1px rgba(123, 74, 226, 0.50) solid;
+}
+
+main .contact-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(123, 74, 226, 0.50);
+    margin-top: 14px;
+}
+
+main .download-cv {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(123, 74, 226, 0.50);
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(123, 74, 226, 0.10);
+}
+
+footer .footer-content {
+    width: 100%; /* Use 100% width for responsiveness */
+    max-width: 1931px; /* Set max-width to avoid overflow */
+    height: 88px;
+    position: relative;
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+footer .copyright {
+    width: 457px;
+    height: 29px;
+    position: absolute;
+    left: 146px;
+    top: 32px;
+    color: rgba(22, 8, 8, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+footer .social-icons {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    left: 887px;
+    top: 23px;
+}
+
+footer .social-icons .inner-icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(10, 10, 10, 0.5);
+    border-radius: 50%;
+}
+
+footer .social-icons .icon {
+    width: 17.82px;
+    height: 16.61px;
+    position: absolute;
+    left: 10.69px;
+    top: 9.50px;
+    background: #090E16;
+    border-radius: 50%;
+}
+
+footer .download-icon {
+    width: 39.56px;
+    height: 38.59px;
+    position: absolute;
+    left: 945.29px;
+    top: 23.40px;
+    background: rgba(255, 255, 255, 0.50);
+}
