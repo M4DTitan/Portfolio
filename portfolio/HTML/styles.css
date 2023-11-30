@@ -24,13 +24,14 @@ nav {
 }
 
 nav a {
-    margin: 0 15px;
+    margin: 0 15px; /* Adjust the margin to add spacing */
     text-align: center;
     color: rgba(123, 74, 226, 0.50);
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
 }
+
 
 main {
     display: flex;
